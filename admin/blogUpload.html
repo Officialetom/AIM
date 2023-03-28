@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/AIM.png" type="image/x-icon">
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js" defer></script>
+    <script src="input.js" defer></script>
+    <title>Blog Upload</title>
+</head>
+<body id="body">
+<div class="display">
+    <div class="display-item" id="display-item">
+        <div class="admin-info">
+            <img src="./images/admin.png" alt="">
+            <div class="detail">
+                <p>Admin</p>
+            </div>
+        </div>
+        <div class="dashboard-link">
+            <a href="./dashboard.html"><img src="./images/layout.png" alt=""> Dashboard</a>
+            <a href="./blogUpload.html"><img src="./images/file.png" alt=""> Blog Upload</a>
+            <a href="./allBlog.html"><img src="./images/blogging.png" alt=""> All Blogs</a>
+            <a href="./users.html"><img src="./images/reserve.png" alt=""> All Reserved</a>
+            <a href="./message.html"><img src="./images/chat.png" alt=""> Send Messages</a>
+            <a href="#"><img src="./images/shutdown (1).png" alt=""> Logout</a>
+            <a href="#" id="close-btn"><img src="./images/close.png" alt=""> Close</a>
+        </div>
+    </div>
+    <div class="display-item">
+        <div class="nav">
+            <div class="nav-item">
+                <i class="toggle-btn" id="toggle-btn">
+                    <span class="btn-btn"></span>
+                    <span class="btn-btn"></span>
+                    <span class="btn-btn"></span>
+                </i>
+            </div>
+            <div class="nav-item">
+                <p>Africa Impact Makers  |  Admin</p>
+            </div>
+        </div>
+        <div class="greet">
+            <p>Blog Upload</p>
+        </div>
+        <div class="box">
+            <div class="blog-container">
+                <form action="" class="blog-send">
+                    <input type="file" name="file" id="file" accept=".jpg, .jpeg" class="image-file">
+                    <label for="file" id="file-btn">Choose Image File</label>
+                    <input type="text" name="title" id="blog-title" placeholder="Blog Title">
+                    <select name="category" id="">
+                        <option value="Select">Select Category</option>
+                        <option value="News">News</option>
+                        <option value="Community">Community</option>
+                        <option value="Research">Research</option>
+                    </select>
+                    <textarea name="blog-body" id="" placeholder="Blog Body"></textarea>
+                    <button type="submit" name="upload">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
