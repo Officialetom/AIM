@@ -1,0 +1,5 @@
+<div class="pop" id="pop">
+    <div class="pop-container">
+        <h3>Awesome You Reserved a spot!</h3>
+    </div>
+</div>
